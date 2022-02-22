@@ -77,7 +77,7 @@ const Archive = ({ noteStyle }) => {
     });
 
     setArchiveData((data) => {
-      return data.filter((element, index) => index != id);
+      return data.filter((element, index) => index !== id);
     });
   }
 
@@ -87,7 +87,7 @@ const Archive = ({ noteStyle }) => {
       return [note, ...data];
     });
     setArchiveData((data) => {
-      return data.filter((element, index) => index != id);
+      return data.filter((element, index) => index !== id);
     });
   };
 
