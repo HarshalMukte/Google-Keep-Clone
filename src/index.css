@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* for masonry */
+.notes_grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -25px; /* gutter size offset */
+  width: auto;
+  transition: .3s;
+}
+.notes_grid.listStyle{
+  flex-direction: column;
+}
+.notes_grid_column {
+  padding-left: 25px; /* gutter size */
+  background-clip: padding-box;
+  transition: .3s;
+}
+.notes_grid_column.listStyle{
+  width: 100% !important;
+}
+
+/* Style your items */
+.notes_grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 25px;
+  transition: .3s;
+}

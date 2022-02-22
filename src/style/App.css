@@ -1,0 +1,2151 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  height: 16px;
+  overflow: visible;
+  width: 16px;
+}
+
+::-webkit-scrollbar-button {
+  height: 0;
+  width: 0;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  background-clip: padding-box;
+  border: solid transparent;
+  border-width: 1px 1px 1px 6px;
+  min-height: 28px;
+  padding: 100px 0 0;
+  -webkit-box-shadow: inset 1px 1px 0 rgba(10, 10, 10, 0.1), inset 0 -1px 0 rgba(8, 8, 8, 0.07);
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.07);
+}
+
+::-webkit-scrollbar-track {
+  background-clip: padding-box;
+  border: solid transparent;
+  border-width: 0 0 0 4px;
+}
+
+[contenteditable][placeholder]:empty:before {
+  content: attr(placeholder);
+  position: absolute;
+  color: gray;
+  background-color: transparent;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  position: relative;
+}
+
+body main {
+  background-color: #fff;
+}
+
+body main.dark {
+  background-color: #202125;
+  color: #e8eaed;
+}
+
+body main.dark #header {
+  border-bottom: 1px solid #898989d6;
+}
+
+body main.dark #header .input {
+  background-color: rgba(241, 243, 244, 0.24);
+}
+
+body main.dark #header .input.active .search {
+  color: #5c5c5c;
+}
+
+body main.dark #header .input.active .toHomePage input::-webkit-input-placeholder {
+  color: #5c5c5c;
+}
+
+body main.dark #header .input.active .toHomePage input:-ms-input-placeholder {
+  color: #5c5c5c;
+}
+
+body main.dark #header .input.active .toHomePage input::-ms-input-placeholder {
+  color: #5c5c5c;
+}
+
+body main.dark #header .input.active .toHomePage input::placeholder {
+  color: #5c5c5c;
+}
+
+body main.dark #header .input .search {
+  color: #e8eaed;
+}
+
+body main.dark #header .input .toHomePage input {
+  color: #e8eaed;
+}
+
+body main.dark #header .input .toHomePage input::-webkit-input-placeholder {
+  color: #e8eaed;
+}
+
+body main.dark #header .input .toHomePage input:-ms-input-placeholder {
+  color: #e8eaed;
+}
+
+body main.dark #header .input .toHomePage input::-ms-input-placeholder {
+  color: #e8eaed;
+}
+
+body main.dark #header .input .toHomePage input::placeholder {
+  color: #e8eaed;
+}
+
+body main.dark #header .input .toHomePage input:focus {
+  color: #202125;
+}
+
+body main.dark #header .input .toHomePage input:focus::-webkit-input-placeholder {
+  color: #5c5c5c;
+}
+
+body main.dark #header .input .toHomePage input:focus:-ms-input-placeholder {
+  color: #5c5c5c;
+}
+
+body main.dark #header .input .toHomePage input:focus::-ms-input-placeholder {
+  color: #5c5c5c;
+}
+
+body main.dark #header .input .toHomePage input:focus::placeholder {
+  color: #5c5c5c;
+}
+
+body main.dark #header .menu_data .menu {
+  color: #e4e5e7;
+}
+
+body main.dark #header .menu_data .logoLink .logo {
+  color: #e4e5e7;
+}
+
+body main.dark .main_container #aside_menu .links .menu-items {
+  color: #e8eaed;
+}
+
+body main.dark .main_container #aside_menu .links .menu-items.active {
+  color: #e8eaed;
+  background-color: #41331c;
+}
+
+body main.dark .main_container .content_container #Notes_div .input_box .input,
+body main.dark .main_container .content_container #reminder .input_box .input,
+body main.dark .main_container .content_container #archive_div .input_box .input,
+body main.dark .main_container .content_container #trash_div .input_box .input {
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.604), 0 2px 6px 2px rgba(0, 0, 0, 0.323);
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.604), 0 2px 6px 2px rgba(0, 0, 0, 0.323);
+}
+
+body main.dark .main_container .content_container #Notes_div .input_box .input p,
+body main.dark .main_container .content_container #reminder .input_box .input p,
+body main.dark .main_container .content_container #archive_div .input_box .input p,
+body main.dark .main_container .content_container #trash_div .input_box .input p {
+  color: #c0c0c0;
+}
+
+body main.dark .main_container .content_container #Notes_div .input_box .input input,
+body main.dark .main_container .content_container #reminder .input_box .input input,
+body main.dark .main_container .content_container #archive_div .input_box .input input,
+body main.dark .main_container .content_container #trash_div .input_box .input input {
+  color: #e8eaed;
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible {
+  border: 1px solid #ffffff61;
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note .content,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible .content,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note .content,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible .content,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note .content,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible .content,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note .content,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible .content {
+  color: #e8eaed;
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note .content h3,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible .content h3,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note .content h3,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible .content h3,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note .content h3,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible .content h3,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note .content h3,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible .content h3 {
+  color: #e8eaed;
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note .content p,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible .content p,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note .content p,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible .content p,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note .content p,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible .content p,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note .content p,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible .content p {
+  color: #e8eaed;
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note .todo_action,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible .todo_action,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note .todo_action,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible .todo_action,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note .todo_action,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible .todo_action,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note .todo_action,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible .todo_action {
+  color: #a3a3a3;
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.default,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.default,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible.default,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.default,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.default,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.default,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible.default,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.default,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.default,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.default,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible.default,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.default,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.default,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.default,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible.default,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.default {
+  background-color: transparent;
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.red,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.red,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible.red,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.red,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.red,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.red,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible.red,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.red,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.red,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.red,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible.red,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.red,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.red,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.red,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible.red,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.red {
+  background-color: #5c2b29;
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.orange,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.orange,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible.orange,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.orange,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.orange,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.orange,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible.orange,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.orange,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.orange,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.orange,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible.orange,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.orange,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.orange,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.orange,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible.orange,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.orange {
+  background-color: #614a19;
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.yellow,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.yellow,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible.yellow,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.yellow,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.yellow,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.yellow,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible.yellow,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.yellow,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.yellow,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.yellow,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible.yellow,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.yellow,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.yellow,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.yellow,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible.yellow,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.yellow {
+  background-color: #635d19;
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.green,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.green,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible.green,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.green,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.green,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.green,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible.green,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.green,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.green,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.green,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible.green,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.green,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.green,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.green,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible.green,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.green {
+  background-color: #345920;
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.teal,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.teal,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible.teal,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.teal,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.teal,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.teal,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible.teal,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.teal,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.teal,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.teal,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible.teal,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.teal,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.teal,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.teal,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible.teal,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.teal {
+  background-color: #16504b;
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.blue,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.blue,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible.blue,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.blue,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.blue,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.blue,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible.blue,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.blue,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.blue,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.blue,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible.blue,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.blue,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.blue,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.blue,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible.blue,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.blue {
+  background-color: #2d555e;
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.darkblue,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.darkblue,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible.darkblue,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.darkblue,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.darkblue,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.darkblue,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible.darkblue,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.darkblue,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.darkblue,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.darkblue,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible.darkblue,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.darkblue,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.darkblue,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.darkblue,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible.darkblue,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.darkblue {
+  background-color: #1e3a5f;
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.purple,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.purple,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible.purple,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.purple,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.purple,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.purple,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible.purple,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.purple,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.purple,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.purple,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible.purple,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.purple,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.purple,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.purple,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible.purple,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.purple {
+  background-color: #42275e;
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.pink,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.pink,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible.pink,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.pink,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.pink,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.pink,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible.pink,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.pink,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.pink,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.pink,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible.pink,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.pink,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.pink,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.pink,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible.pink,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.pink {
+  background-color: #5b2245;
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.brown,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.brown,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible.brown,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.brown,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.brown,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.brown,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible.brown,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.brown,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.brown,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.brown,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible.brown,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.brown,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.brown,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.brown,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible.brown,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.brown {
+  background-color: #442f19;
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.gray,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.gray,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible.gray,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.gray,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.gray,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.gray,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible.gray,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.gray,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.gray,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.gray,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible.gray,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.gray,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.gray,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.gray,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible.gray,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.gray {
+  background-color: #3c3f43;
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note .colorTheme,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note .colorTheme,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note .colorTheme,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme {
+  background-color: #202124;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.604), 0 2px 6px 2px rgba(4, 4, 4, 0.3);
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.604), 0 2px 6px 2px rgba(4, 4, 4, 0.3);
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.none,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.none,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.none,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.none,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.none,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.none,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.none,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.none {
+  border-color: #747474;
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.none:hover,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.none:hover,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.none:hover,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.none:hover,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.none:hover,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.none:hover,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.none:hover,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.none:hover {
+  border-color: #cacaca;
+}
+
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color:hover,
+body main.dark .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color:hover,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color:hover,
+body main.dark .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color:hover,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color:hover,
+body main.dark .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color:hover,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color:hover,
+body main.dark .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color:hover {
+  border-color: #e4e5e7;
+}
+
+body main.dark .main_container .content_container #Notes_div .trashContent p,
+body main.dark .main_container .content_container #reminder .trashContent p,
+body main.dark .main_container .content_container #archive_div .trashContent p,
+body main.dark .main_container .content_container #trash_div .trashContent p {
+  color: #e4e5e7;
+}
+
+body main.dark .main_container .content_container #labels .icon {
+  color: #d8d8d8;
+}
+
+body main.dark .main_container .content_container #labels .content {
+  color: #808080;
+}
+
+body main.dark .main_container .content_container #labels .content a {
+  background-color: #202125;
+}
+
+body main.dark .main_container .content_container #labels .content a:hover {
+  background-color: #2b2b2b;
+}
+
+body main #header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 0.5px solid #c7c7c7;
+  height: 65px;
+  padding: 0px 8px;
+  z-index: 100;
+  position: fixed;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body main #header.scrolled {
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
+  border-bottom-color: transparent;
+}
+
+body main #header .menu_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main #header .menu_data .menu {
+  font-size: 19px;
+  color: #646464;
+  margin: 0px 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background-color: transparent;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body main #header .menu_data .menu:hover {
+  background-color: rgba(95, 99, 104, 0.157);
+}
+
+body main #header .menu_data .logoLink {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body main #header .menu_data .logoLink .logo {
+  font-size: 23px;
+  font-weight: 400;
+  color: #646464;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main #header .menu_data .logoLink .logo img {
+  width: 35px;
+  margin-right: 10px;
+}
+
+body main #header .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #646464;
+  background-color: #f2f3f5;
+  width: 700px;
+  padding: 5px;
+  border-radius: 8px;
+  margin: 0px 25px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media screen and (max-width: 600px) {
+  body main #header .input {
+    display: none;
+  }
+}
+
+body main #header .input.active {
+  -webkit-box-shadow: 1px 1px 3px #8a8a8a;
+          box-shadow: 1px 1px 3px #8a8a8a;
+  background-color: #ffffff;
+}
+
+body main #header .input.active .toHomePage {
+  background-color: inherit;
+}
+
+body main #header .input.active .toHomePage input {
+  background-color: inherit;
+}
+
+body main #header .input .search,
+body main #header .input .cross {
+  font-size: 17px;
+  color: #646464;
+  padding: 0px 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background-color: transparent;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body main #header .input .search:hover,
+body main #header .input .cross:hover {
+  background-color: rgba(95, 99, 104, 0.157);
+}
+
+body main #header .input .search i,
+body main #header .input .cross i {
+  pointer-events: none;
+}
+
+body main #header .input .cross {
+  font-size: 22px;
+  font-weight: 400;
+  padding: 0px 10px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body main #header .input .cross.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+body main #header .input .toHomePage {
+  width: 90%;
+  text-decoration: none;
+}
+
+body main #header .input .toHomePage input {
+  background-color: inherit;
+  width: 100%;
+  padding: 6px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+body main #header .action_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #646464;
+  font-size: 22px;
+}
+
+body main #header .action_data .refresh,
+body main #header .action_data .viewList,
+body main #header .action_data .theme {
+  padding: 0px 10px;
+  font-size: 19px;
+  color: #646464;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: transparent;
+  margin: 0px 3px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body main #header .action_data .refresh:hover,
+body main #header .action_data .viewList:hover,
+body main #header .action_data .theme:hover {
+  background-color: rgba(95, 99, 104, 0.157);
+}
+
+body main #header .action_data .profile {
+  width: 50px;
+  height: 50px;
+  background-color: #fabd02;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 3px;
+  color: #fff;
+}
+
+body main .main_container {
+  width: 100%;
+  height: 100vh;
+  padding-top: 65px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main .main_container #aside_menu {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  height: auto;
+  padding: 10px 0px;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body main .main_container #aside_menu.menu_toggle {
+  width: 80px;
+  min-width: 66px;
+  overflow: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body main .main_container #aside_menu .links {
+  width: 100%;
+}
+
+body main .main_container #aside_menu .links .menu-items {
+  width: 100%;
+  padding: 14px 30px;
+  border-radius: 0px 50px 50px 0px;
+  color: #646464;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+body main .main_container #aside_menu .links .menu-items:hover {
+  background-color: rgba(95, 99, 104, 0.157);
+}
+
+body main .main_container #aside_menu .links .menu-items.active {
+  color: #3a3a3a;
+  font-weight: 600;
+  background-color: #fdefc2;
+}
+
+body main .main_container #aside_menu .links .menu-items i {
+  padding: 4px 40px 4px 4px;
+}
+
+body main .main_container #aside_menu #footer {
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+body main .main_container #aside_menu #footer p {
+  font-size: 17px;
+  color: #646464;
+}
+
+body main .main_container .content_container {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 30px 40px;
+  height: auto;
+  overflow-y: scroll;
+  position: relative;
+}
+
+body main .main_container .content_container #Notes_div,
+body main .main_container .content_container #reminder,
+body main .main_container .content_container #archive_div,
+body main .main_container .content_container #trash_div {
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main .main_container .content_container #Notes_div.list_style,
+body main .main_container .content_container #reminder.list_style,
+body main .main_container .content_container #archive_div.list_style,
+body main .main_container .content_container #trash_div.list_style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .main_container .content_container #Notes_div.list_style .notes_wrapper,
+body main .main_container .content_container #reminder.list_style .notes_wrapper,
+body main .main_container .content_container #archive_div.list_style .notes_wrapper,
+body main .main_container .content_container #trash_div.list_style .notes_wrapper {
+  width: 100%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  max-width: 560px;
+}
+
+body main .main_container .content_container #Notes_div .input_box,
+body main .main_container .content_container #reminder .input_box,
+body main .main_container .content_container #archive_div .input_box,
+body main .main_container .content_container #trash_div .input_box {
+  width: 100%;
+  position: relative;
+  margin-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  pointer-events: all;
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body main .main_container .content_container #Notes_div .input_box.deActive,
+body main .main_container .content_container #reminder .input_box.deActive,
+body main .main_container .content_container #archive_div .input_box.deActive,
+body main .main_container .content_container #trash_div .input_box.deActive {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  pointer-events: none;
+  position: absolute;
+}
+
+body main .main_container .content_container #Notes_div .input_box .input,
+body main .main_container .content_container #reminder .input_box .input,
+body main .main_container .content_container #archive_div .input_box .input,
+body main .main_container .content_container #trash_div .input_box .input {
+  width: 550px;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(63, 67, 70, 0.342), 0 2px 6px 2px rgba(58, 62, 65, 0.315);
+          box-shadow: 0 1px 2px 0 rgba(63, 67, 70, 0.342), 0 2px 6px 2px rgba(58, 62, 65, 0.315);
+  border: 1px solid #ffffff61;
+  padding: 5px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .main_container .content_container #Notes_div .input_box .input input,
+body main .main_container .content_container #reminder .input_box .input input,
+body main .main_container .content_container #archive_div .input_box .input input,
+body main .main_container .content_container #trash_div .input_box .input input {
+  background-color: transparent;
+}
+
+body main .main_container .content_container #Notes_div .input_box .input p,
+body main .main_container .content_container #reminder .input_box .input p,
+body main .main_container .content_container #archive_div .input_box .input p,
+body main .main_container .content_container #trash_div .input_box .input p {
+  color: #646464;
+}
+
+body main .main_container .content_container #Notes_div .input_box .input input,
+body main .main_container .content_container #Notes_div .input_box .input p,
+body main .main_container .content_container #reminder .input_box .input input,
+body main .main_container .content_container #reminder .input_box .input p,
+body main .main_container .content_container #archive_div .input_box .input input,
+body main .main_container .content_container #archive_div .input_box .input p,
+body main .main_container .content_container #trash_div .input_box .input input,
+body main .main_container .content_container #trash_div .input_box .input p {
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 15px;
+  margin: 2px 0px;
+}
+
+body main .main_container .content_container #Notes_div .input_box .input .close,
+body main .main_container .content_container #reminder .input_box .input .close,
+body main .main_container .content_container #archive_div .input_box .input .close,
+body main .main_container .content_container #trash_div .input_box .input .close {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 6px 15px;
+  border-radius: 4px;
+  margin-right: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #505050;
+  background-color: transparent;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body main .main_container .content_container #Notes_div .input_box .input .close:hover,
+body main .main_container .content_container #reminder .input_box .input .close:hover,
+body main .main_container .content_container #archive_div .input_box .input .close:hover,
+body main .main_container .content_container #trash_div .input_box .input .close:hover {
+  background-color: rgba(211, 211, 211, 0.418);
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper,
+body main .main_container .content_container #reminder .notes_wrapper,
+body main .main_container .content_container #archive_div .notes_wrapper,
+body main .main_container .content_container #trash_div .notes_wrapper {
+  width: 100%;
+  word-break: break-all;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper.empty,
+body main .main_container .content_container #reminder .notes_wrapper.empty,
+body main .main_container .content_container #archive_div .notes_wrapper.empty,
+body main .main_container .content_container #trash_div .notes_wrapper.empty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper.empty .noData,
+body main .main_container .content_container #reminder .notes_wrapper.empty .noData,
+body main .main_container .content_container #archive_div .notes_wrapper.empty .noData,
+body main .main_container .content_container #trash_div .notes_wrapper.empty .noData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper.empty .noData span,
+body main .main_container .content_container #reminder .notes_wrapper.empty .noData span,
+body main .main_container .content_container #archive_div .notes_wrapper.empty .noData span,
+body main .main_container .content_container #trash_div .notes_wrapper.empty .noData span {
+  font-size: 120px;
+  margin-bottom: 20px;
+  color: #d8d8d8;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper.empty .noData p,
+body main .main_container .content_container #reminder .notes_wrapper.empty .noData p,
+body main .main_container .content_container #archive_div .notes_wrapper.empty .noData p,
+body main .main_container .content_container #trash_div .notes_wrapper.empty .noData p {
+  color: #646464;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible,
+body main .main_container .content_container #reminder .notes_wrapper #note,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible,
+body main .main_container .content_container #archive_div .notes_wrapper #note,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible,
+body main .main_container .content_container #trash_div .notes_wrapper #note,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible {
+  padding: 18px;
+  border: 1px solid rgba(95, 99, 104, 0.157);
+  border-radius: 8px;
+  position: relative;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  color: #646464;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note.vanished,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible.vanished,
+body main .main_container .content_container #reminder .notes_wrapper #note.vanished,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible.vanished,
+body main .main_container .content_container #archive_div .notes_wrapper #note.vanished,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible.vanished,
+body main .main_container .content_container #trash_div .notes_wrapper #note.vanished,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible.vanished {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note.default,
+body main .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.default,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible.default,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.default,
+body main .main_container .content_container #reminder .notes_wrapper #note.default,
+body main .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.default,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible.default,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.default,
+body main .main_container .content_container #archive_div .notes_wrapper #note.default,
+body main .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.default,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible.default,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.default,
+body main .main_container .content_container #trash_div .notes_wrapper #note.default,
+body main .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.default,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible.default,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.default {
+  background-color: transparent;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note.red,
+body main .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.red,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible.red,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.red,
+body main .main_container .content_container #reminder .notes_wrapper #note.red,
+body main .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.red,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible.red,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.red,
+body main .main_container .content_container #archive_div .notes_wrapper #note.red,
+body main .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.red,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible.red,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.red,
+body main .main_container .content_container #trash_div .notes_wrapper #note.red,
+body main .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.red,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible.red,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.red {
+  background-color: #f28b82;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note.orange,
+body main .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.orange,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible.orange,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.orange,
+body main .main_container .content_container #reminder .notes_wrapper #note.orange,
+body main .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.orange,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible.orange,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.orange,
+body main .main_container .content_container #archive_div .notes_wrapper #note.orange,
+body main .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.orange,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible.orange,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.orange,
+body main .main_container .content_container #trash_div .notes_wrapper #note.orange,
+body main .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.orange,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible.orange,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.orange {
+  background-color: #fbbc04;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note.yellow,
+body main .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.yellow,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible.yellow,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.yellow,
+body main .main_container .content_container #reminder .notes_wrapper #note.yellow,
+body main .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.yellow,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible.yellow,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.yellow,
+body main .main_container .content_container #archive_div .notes_wrapper #note.yellow,
+body main .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.yellow,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible.yellow,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.yellow,
+body main .main_container .content_container #trash_div .notes_wrapper #note.yellow,
+body main .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.yellow,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible.yellow,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.yellow {
+  background-color: #fff475;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note.green,
+body main .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.green,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible.green,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.green,
+body main .main_container .content_container #reminder .notes_wrapper #note.green,
+body main .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.green,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible.green,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.green,
+body main .main_container .content_container #archive_div .notes_wrapper #note.green,
+body main .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.green,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible.green,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.green,
+body main .main_container .content_container #trash_div .notes_wrapper #note.green,
+body main .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.green,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible.green,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.green {
+  background-color: #ccff90;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note.teal,
+body main .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.teal,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible.teal,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.teal,
+body main .main_container .content_container #reminder .notes_wrapper #note.teal,
+body main .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.teal,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible.teal,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.teal,
+body main .main_container .content_container #archive_div .notes_wrapper #note.teal,
+body main .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.teal,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible.teal,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.teal,
+body main .main_container .content_container #trash_div .notes_wrapper #note.teal,
+body main .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.teal,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible.teal,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.teal {
+  background-color: #a7ffeb;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note.blue,
+body main .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.blue,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible.blue,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.blue,
+body main .main_container .content_container #reminder .notes_wrapper #note.blue,
+body main .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.blue,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible.blue,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.blue,
+body main .main_container .content_container #archive_div .notes_wrapper #note.blue,
+body main .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.blue,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible.blue,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.blue,
+body main .main_container .content_container #trash_div .notes_wrapper #note.blue,
+body main .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.blue,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible.blue,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.blue {
+  background-color: #cbf0f8;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note.darkblue,
+body main .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.darkblue,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible.darkblue,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.darkblue,
+body main .main_container .content_container #reminder .notes_wrapper #note.darkblue,
+body main .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.darkblue,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible.darkblue,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.darkblue,
+body main .main_container .content_container #archive_div .notes_wrapper #note.darkblue,
+body main .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.darkblue,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible.darkblue,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.darkblue,
+body main .main_container .content_container #trash_div .notes_wrapper #note.darkblue,
+body main .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.darkblue,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible.darkblue,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.darkblue {
+  background-color: #aecbfa;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note.purple,
+body main .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.purple,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible.purple,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.purple,
+body main .main_container .content_container #reminder .notes_wrapper #note.purple,
+body main .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.purple,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible.purple,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.purple,
+body main .main_container .content_container #archive_div .notes_wrapper #note.purple,
+body main .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.purple,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible.purple,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.purple,
+body main .main_container .content_container #trash_div .notes_wrapper #note.purple,
+body main .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.purple,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible.purple,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.purple {
+  background-color: #d7aefb;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note.pink,
+body main .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.pink,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible.pink,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.pink,
+body main .main_container .content_container #reminder .notes_wrapper #note.pink,
+body main .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.pink,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible.pink,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.pink,
+body main .main_container .content_container #archive_div .notes_wrapper #note.pink,
+body main .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.pink,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible.pink,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.pink,
+body main .main_container .content_container #trash_div .notes_wrapper #note.pink,
+body main .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.pink,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible.pink,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.pink {
+  background-color: #fdcfe8;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note.brown,
+body main .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.brown,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible.brown,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.brown,
+body main .main_container .content_container #reminder .notes_wrapper #note.brown,
+body main .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.brown,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible.brown,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.brown,
+body main .main_container .content_container #archive_div .notes_wrapper #note.brown,
+body main .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.brown,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible.brown,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.brown,
+body main .main_container .content_container #trash_div .notes_wrapper #note.brown,
+body main .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.brown,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible.brown,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.brown {
+  background-color: #e6c9a8;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note.gray,
+body main .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.gray,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible.gray,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.gray,
+body main .main_container .content_container #reminder .notes_wrapper #note.gray,
+body main .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.gray,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible.gray,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.gray,
+body main .main_container .content_container #archive_div .notes_wrapper #note.gray,
+body main .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.gray,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible.gray,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.gray,
+body main .main_container .content_container #trash_div .notes_wrapper #note.gray,
+body main .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.gray,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible.gray,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.gray {
+  background-color: #e8eaed;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note:hover,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible:hover,
+body main .main_container .content_container #reminder .notes_wrapper #note:hover,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible:hover,
+body main .main_container .content_container #archive_div .notes_wrapper #note:hover,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible:hover,
+body main .main_container .content_container #trash_div .notes_wrapper #note:hover,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible:hover {
+  -webkit-box-shadow: 0 1px 2px 0 rgba(63, 67, 70, 0.342), 0 2px 6px 2px rgba(58, 62, 65, 0.315);
+          box-shadow: 0 1px 2px 0 rgba(63, 67, 70, 0.342), 0 2px 6px 2px rgba(58, 62, 65, 0.315);
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note:hover .todo_action,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible:hover .todo_action,
+body main .main_container .content_container #reminder .notes_wrapper #note:hover .todo_action,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible:hover .todo_action,
+body main .main_container .content_container #archive_div .notes_wrapper #note:hover .todo_action,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible:hover .todo_action,
+body main .main_container .content_container #trash_div .notes_wrapper #note:hover .todo_action,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible:hover .todo_action {
+  opacity: 1;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note .content,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .content,
+body main .main_container .content_container #reminder .notes_wrapper #note .content,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .content,
+body main .main_container .content_container #archive_div .notes_wrapper #note .content,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .content,
+body main .main_container .content_container #trash_div .notes_wrapper #note .content,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .content {
+  cursor: pointer;
+  word-break: break-word;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note .content h3,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .content h3,
+body main .main_container .content_container #reminder .notes_wrapper #note .content h3,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .content h3,
+body main .main_container .content_container #archive_div .notes_wrapper #note .content h3,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .content h3,
+body main .main_container .content_container #trash_div .notes_wrapper #note .content h3,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .content h3 {
+  color: #424242;
+  margin-bottom: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note .content p,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .content p,
+body main .main_container .content_container #reminder .notes_wrapper #note .content p,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .content p,
+body main .main_container .content_container #archive_div .notes_wrapper #note .content p,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .content p,
+body main .main_container .content_container #trash_div .notes_wrapper #note .content p,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .content p {
+  margin-bottom: 8px;
+  color: #424242;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note .todo_action,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .todo_action,
+body main .main_container .content_container #reminder .notes_wrapper #note .todo_action,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .todo_action,
+body main .main_container .content_container #archive_div .notes_wrapper #note .todo_action,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .todo_action,
+body main .main_container .content_container #trash_div .notes_wrapper #note .todo_action,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .todo_action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #505050;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note .todo_action .todo_icons,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .todo_action .todo_icons,
+body main .main_container .content_container #reminder .notes_wrapper #note .todo_action .todo_icons,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .todo_action .todo_icons,
+body main .main_container .content_container #archive_div .notes_wrapper #note .todo_action .todo_icons,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .todo_action .todo_icons,
+body main .main_container .content_container #trash_div .notes_wrapper #note .todo_action .todo_icons,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .todo_action .todo_icons {
+  width: 30px;
+  height: 30px;
+  font-size: 13px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border-radius: 50%;
+  margin: 0px 2px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note .todo_action .todo_icons:hover,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .todo_action .todo_icons:hover,
+body main .main_container .content_container #reminder .notes_wrapper #note .todo_action .todo_icons:hover,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .todo_action .todo_icons:hover,
+body main .main_container .content_container #archive_div .notes_wrapper #note .todo_action .todo_icons:hover,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .todo_action .todo_icons:hover,
+body main .main_container .content_container #trash_div .notes_wrapper #note .todo_action .todo_icons:hover,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .todo_action .todo_icons:hover {
+  background-color: rgba(95, 99, 104, 0.157);
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note .todo_action .todo_icons i,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .todo_action .todo_icons i,
+body main .main_container .content_container #reminder .notes_wrapper #note .todo_action .todo_icons i,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .todo_action .todo_icons i,
+body main .main_container .content_container #archive_div .notes_wrapper #note .todo_action .todo_icons i,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .todo_action .todo_icons i,
+body main .main_container .content_container #trash_div .notes_wrapper #note .todo_action .todo_icons i,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .todo_action .todo_icons i {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  pointer-events: none;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme,
+body main .main_container .content_container #reminder .notes_wrapper #note .colorTheme,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme,
+body main .main_container .content_container #archive_div .notes_wrapper #note .colorTheme,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme,
+body main .main_container .content_container #trash_div .notes_wrapper #note .colorTheme,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme {
+  min-width: 110%;
+  position: absolute;
+  left: 50%;
+  padding: 8px 10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -80px;
+  z-index: 10;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  opacity: 0;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.296), 0 2px 6px 2px rgba(60, 64, 67, 0.172);
+          box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.296), 0 2px 6px 2px rgba(60, 64, 67, 0.172);
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme.active,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme.active,
+body main .main_container .content_container #reminder .notes_wrapper #note .colorTheme.active,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme.active,
+body main .main_container .content_container #archive_div .notes_wrapper #note .colorTheme.active,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme.active,
+body main .main_container .content_container #trash_div .notes_wrapper #note .colorTheme.active,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color,
+body main .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color,
+body main .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color,
+body main .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.none,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.none,
+body main .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.none,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.none,
+body main .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.none,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.none,
+body main .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.none,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.none {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #cacaca;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.none:hover,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.none:hover,
+body main .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.none:hover,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.none:hover,
+body main .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.none:hover,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.none:hover,
+body main .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.none:hover,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.none:hover {
+  border: 1px solid #232324;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color.none i,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color.none i,
+body main .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color.none i,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color.none i,
+body main .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color.none i,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color.none i,
+body main .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color.none i,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color.none i {
+  pointer-events: none;
+}
+
+body main .main_container .content_container #Notes_div .notes_wrapper #note .colorTheme .color:hover,
+body main .main_container .content_container #Notes_div .notes_wrapper #note.visible .colorTheme .color:hover,
+body main .main_container .content_container #reminder .notes_wrapper #note .colorTheme .color:hover,
+body main .main_container .content_container #reminder .notes_wrapper #note.visible .colorTheme .color:hover,
+body main .main_container .content_container #archive_div .notes_wrapper #note .colorTheme .color:hover,
+body main .main_container .content_container #archive_div .notes_wrapper #note.visible .colorTheme .color:hover,
+body main .main_container .content_container #trash_div .notes_wrapper #note .colorTheme .color:hover,
+body main .main_container .content_container #trash_div .notes_wrapper #note.visible .colorTheme .color:hover {
+  border: 1px solid #1d1dff;
+}
+
+body main .main_container .content_container #reminder,
+body main .main_container .content_container #archive_div,
+body main .main_container .content_container #trash_div {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .main_container .content_container #reminder .linkToHome,
+body main .main_container .content_container #archive_div .linkToHome,
+body main .main_container .content_container #trash_div .linkToHome {
+  text-decoration: none;
+  cursor: text;
+}
+
+body main .main_container .content_container #reminder .linkToHome .inputDiv,
+body main .main_container .content_container #archive_div .linkToHome .inputDiv,
+body main .main_container .content_container #trash_div .linkToHome .inputDiv {
+  pointer-events: none;
+}
+
+body main .main_container .content_container #reminder .icon,
+body main .main_container .content_container #archive_div .icon,
+body main .main_container .content_container #trash_div .icon {
+  font-size: 120px;
+  margin-bottom: 20px;
+  color: #d8d8d8;
+}
+
+body main .main_container .content_container #reminder .icon i,
+body main .main_container .content_container #archive_div .icon i,
+body main .main_container .content_container #trash_div .icon i {
+  pointer-events: none;
+}
+
+body main .main_container .content_container #reminder .content,
+body main .main_container .content_container #archive_div .content,
+body main .main_container .content_container #trash_div .content {
+  color: #808080;
+  font-size: 20px;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+body main .main_container .content_container #reminder .content h3,
+body main .main_container .content_container #archive_div .content h3,
+body main .main_container .content_container #trash_div .content h3 {
+  font-size: 20px;
+}
+
+body main .main_container .content_container #reminder .content p,
+body main .main_container .content_container #archive_div .content p,
+body main .main_container .content_container #trash_div .content p {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+body main .main_container .content_container #trash_div .trashContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+body main .main_container .content_container #trash_div .trashContent p {
+  font-size: 17px;
+  font-style: italic;
+  color: #202124;
+}
+
+body main .main_container .content_container #trash_div .trashContent .emptyTrash {
+  color: #1a73e8;
+  margin-left: 16px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  height: 36px;
+  padding: 8px 24px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  opacity: 0;
+  display: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body main .main_container .content_container #trash_div .trashContent .emptyTrash.active {
+  opacity: 1;
+  display: inline-block;
+}
+
+body main .main_container .content_container #trash_div .trashContent .emptyTrash:hover {
+  background-color: rgba(66, 133, 244, 0.039);
+}
+
+body main .main_container .content_container #labels {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .main_container .content_container #labels .icon {
+  font-size: 120px;
+  margin-bottom: 20px;
+  color: #c7c6c6;
+  animation: 0.5s construct infinite alternate-reverse ease-out;
+}
+
+body main .main_container .content_container #labels .content {
+  color: #808080;
+  font-size: 20px;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+body main .main_container .content_container #labels .content p {
+  margin-bottom: 20px;
+}
+
+body main .main_container .content_container #labels .content p a {
+  font-size: 20px;
+  color: #6a6a6a;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  padding: 2px;
+  border-radius: 5px;
+  margin-left: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+body main .main_container .content_container #labels .content p a:hover {
+  background-color: #e4e4e4;
+}
+
+body .alertText {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  -webkit-transform: translate(20px, 0%);
+          transform: translate(20px, 0%);
+  background-color: #202124;
+  color: #fff;
+  max-width: 360px;
+  border-radius: 2px;
+  width: 100%;
+  padding: 25px;
+  font-size: 15px;
+  z-index: 100;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 0;
+  display: none;
+}
+
+body .alertText.dark {
+  background-color: #313235;
+}
+
+body .alertText.active {
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: alertPopUp 0.4s linear forwards;
+          animation: alertPopUp 0.4s linear forwards;
+}
+
+body .alertText.active span {
+  opacity: 1;
+}
+
+body .alertText span {
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  opacity: 0;
+}
+
+body .alertText span:hover {
+  background-color: rgba(95, 99, 104, 0.157);
+  color: #202124;
+}
+
+body .alertText span i {
+  pointer-events: none;
+}
+
+body .noteEditContainer {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: none;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+body .noteEditContainer.active {
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .noteEditContainer.dark .noteEditBox {
+  background-color: #202124;
+  border: 1px solid #ffffff61;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.534), 0 4px 8px 3px rgba(0, 0, 0, 0.26);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.534), 0 4px 8px 3px rgba(0, 0, 0, 0.26);
+}
+
+body .noteEditContainer.dark .noteEditBox.red {
+  background-color: #5c2b29;
+}
+
+body .noteEditContainer.dark .noteEditBox.orange {
+  background-color: #614a19;
+}
+
+body .noteEditContainer.dark .noteEditBox.yellow {
+  background-color: #635d19;
+}
+
+body .noteEditContainer.dark .noteEditBox.green {
+  background-color: #345920;
+}
+
+body .noteEditContainer.dark .noteEditBox.teal {
+  background-color: #16504b;
+}
+
+body .noteEditContainer.dark .noteEditBox.blue {
+  background-color: #2d555e;
+}
+
+body .noteEditContainer.dark .noteEditBox.darkblue {
+  background-color: #1e3a5f;
+}
+
+body .noteEditContainer.dark .noteEditBox.purple {
+  background-color: #42275e;
+}
+
+body .noteEditContainer.dark .noteEditBox.pink {
+  background-color: #5b2245;
+}
+
+body .noteEditContainer.dark .noteEditBox.brown {
+  background-color: #442f19;
+}
+
+body .noteEditContainer.dark .noteEditBox.gray {
+  background-color: #3c3f43;
+}
+
+body .noteEditContainer.dark .noteEditBox .content {
+  color: #e8eaed;
+}
+
+body .noteEditContainer.dark .noteEditBox .content .content_title h3 {
+  color: #e8eaed;
+  font-weight: 600;
+}
+
+body .noteEditContainer.dark .noteEditBox .button button {
+  background-color: transparent;
+  color: #cecece;
+}
+
+body .noteEditContainer.dark .noteEditBox .button button:hover {
+  background-color: #303030c2;
+}
+
+body .noteEditContainer .noteBackground {
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background-color: #2021249a;
+  position: absolute;
+}
+
+body .noteEditContainer .noteEditBox {
+  width: 530px;
+  max-height: 80vh;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(71, 75, 79, 0.34), 0 2px 6px 2px rgba(67, 72, 75, 0.32);
+          box-shadow: 0 1px 2px 0 rgba(71, 75, 79, 0.34), 0 2px 6px 2px rgba(67, 72, 75, 0.32);
+  padding: 25px;
+  border: 1px solid #e4e5e7;
+  border-radius: 8px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  color: #808080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 100;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #fff;
+  -webkit-animation: popUpNote 0.3s ease-out forwards;
+          animation: popUpNote 0.3s ease-out forwards;
+}
+
+body .noteEditContainer .noteEditBox.red {
+  background-color: #f28b82;
+}
+
+body .noteEditContainer .noteEditBox.orange {
+  background-color: #fbbc04;
+}
+
+body .noteEditContainer .noteEditBox.yellow {
+  background-color: #fff475;
+}
+
+body .noteEditContainer .noteEditBox.green {
+  background-color: #ccff90;
+}
+
+body .noteEditContainer .noteEditBox.teal {
+  background-color: #a7ffeb;
+}
+
+body .noteEditContainer .noteEditBox.blue {
+  background-color: #cbf0f8;
+}
+
+body .noteEditContainer .noteEditBox.darkblue {
+  background-color: #aecbfa;
+}
+
+body .noteEditContainer .noteEditBox.purple {
+  background-color: #d7aefb;
+}
+
+body .noteEditContainer .noteEditBox.pink {
+  background-color: #fdcfe8;
+}
+
+body .noteEditContainer .noteEditBox.brown {
+  background-color: #e6c9a8;
+}
+
+body .noteEditContainer .noteEditBox.gray {
+  background-color: #e8eaed;
+}
+
+body .noteEditContainer .noteEditBox .content {
+  font-size: 20px;
+  margin-bottom: 5px;
+  word-break: break-word;
+  overflow-y: scroll;
+}
+
+body .noteEditContainer .noteEditBox .content .content_title {
+  position: relative;
+}
+
+body .noteEditContainer .noteEditBox .content .content_title h3 {
+  outline: none;
+  color: #424242;
+  margin-bottom: 15px;
+}
+
+body .noteEditContainer .noteEditBox .content .content_desc {
+  position: relative;
+}
+
+body .noteEditContainer .noteEditBox .content .content_desc p {
+  outline: none;
+  margin-bottom: 12px;
+  font-size: 17px;
+}
+
+body .noteEditContainer .noteEditBox .button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+body .noteEditContainer .noteEditBox .button .closeBtn {
+  cursor: pointer;
+  padding: 6px 16px;
+  font-size: 18px;
+  color: #505050;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .noteEditContainer .noteEditBox .button .closeBtn:hover {
+  background-color: rgba(95, 99, 104, 0.157);
+}
+
+@-webkit-keyframes alertPopUp {
+  65% {
+    -webkit-transform: translate(20px, -30px);
+            transform: translate(20px, -30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(20px, -20px);
+            transform: translate(20px, -20px);
+  }
+}
+
+@keyframes alertPopUp {
+  65% {
+    -webkit-transform: translate(20px, -30px);
+            transform: translate(20px, -30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(20px, -20px);
+            transform: translate(20px, -20px);
+  }
+}
+
+@-webkit-keyframes alertPopDown {
+  65% {
+    opacity: 0.5;
+    -webkit-transform: translate(20px, -25px);
+            transform: translate(20px, -25px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(20px, 100%);
+            transform: translate(20px, 100%);
+    display: none;
+  }
+}
+
+@keyframes alertPopDown {
+  65% {
+    opacity: 0.5;
+    -webkit-transform: translate(20px, -25px);
+            transform: translate(20px, -25px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(20px, 100%);
+            transform: translate(20px, 100%);
+    display: none;
+  }
+}
+
+@-webkit-keyframes popUpNote {
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes popUpNote {
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes construct {
+  to {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+
+@keyframes construct {
+  to {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+/*# sourceMappingURL=App.css.map */
