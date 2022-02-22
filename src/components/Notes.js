@@ -75,7 +75,7 @@ const Notes = ({ noteStyle }) => {
     });
 
     setNoteData((data) => {
-      return data.filter((element, index) => index != id);
+      return data.filter((element, index) => index !== id);
     });
   };
 
@@ -165,7 +165,7 @@ const Notes = ({ noteStyle }) => {
       return [newData, ...data];
     });
     setNoteData((data) => {
-      return data.filter((element, index) => index != id);
+      return data.filter((element, index) => index !== id);
     });
   }
 };
