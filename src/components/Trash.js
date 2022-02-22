@@ -48,7 +48,7 @@ const Trash = ({ noteStyle }) => {
   const onDelete = (id) => {
     alertData("Note Deleted permenently");
     setTrashData((data) => {
-      return data.filter((element, index) => index != id);
+      return data.filter((element, index) => index !== id);
     });
   };
 
@@ -64,7 +64,7 @@ const Trash = ({ noteStyle }) => {
       return [note, ...data];
     });
     setTrashData((data) => {
-      return data.filter((element, index) => index != id);
+      return data.filter((element, index) => index !== id);
     });
   };
 
